@@ -92,32 +92,39 @@ int main() {
     
     start = high_resolution_clock::now(); 
     auto splay_1 = SplayTree();
-    auto splay_new_1 = SplayTree(); //since search changes the tree, this will be used for deletion
     for (int num : data_1)
         {
             splay_1.put(num, num);
-            splay_new_1.put(num, num);
         }
     
     stop = high_resolution_clock::now(); 
     duration = duration_cast<microseconds>(stop - start); 
     printTime(duration, splay_1.height(), "Spaly Tree", "data_1");
 
-
     start = high_resolution_clock::now(); 
     auto splay_2 = SplayTree();
-    auto splay_new_2 = SplayTree(); //since search changes the tree, this will be used for deletion
     for (int num : data_2)
         {
             splay_2.put(num, num);
-            splay_new_2.put(num, num);
         }
     
     stop = high_resolution_clock::now(); 
     duration = duration_cast<microseconds>(stop - start); 
     printTime(duration, splay_2.height(), "Spaly Tree", "data_2");
 
-    
+
+    auto splay_new_1 = SplayTree(); //since search changes the tree, this will be used for deletion
+    for (int num : data_1)
+        {
+            splay_new_1.put(num, num);
+        }
+
+    auto splay_new_2 = SplayTree(); //since search changes the tree, this will be used for deletion
+    for (int num : data_2)
+        {
+            splay_new_2.put(num, num);
+        }
+
     start = high_resolution_clock::now(); 
     auto RB_1 = RBTree();
     for (int num : data_1)

@@ -30,10 +30,10 @@ Resulting tree height data_1 BST: 29
 Time taken data_2 BST: 101809 microseconds
 Resulting tree height data_2 BST: 1276
 
-Time taken data_1 Spaly Tree: 7676 microseconds
+Time taken data_1 Spaly Tree: 3429 microseconds
 Resulting tree height data_1 Spaly Tree: 44
 
-Time taken data_2 Spaly Tree: 2858 microseconds
+Time taken data_2 Spaly Tree: 1625 microseconds
 Resulting tree height data_2 Spaly Tree: 2867
 
 Time taken data_1 RB-Tree: 5476 microseconds
